@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package protobuf;
+
+option go_package = "github.com/credondocr/go-grcp-server-streaming";
+
+service  StreamingService {
+  rpc FetchResponse (Request) returns (stream Response) {} 
+}
+
+message Request {
+  int32 id = 1;
+  repeated string usernames = 2;
+}
+
+message Response {
+  User user = 1;
+}
+
+
+message User {
+  string name = 1;
+  string url = 2;
+  int32 public_repos = 3;
+}
