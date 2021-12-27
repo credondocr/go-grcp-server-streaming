@@ -18,3 +18,7 @@ Please read this documentation for more [information](http://google.github.io/pr
 # How to generate the proto files
 
 `protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative proto/data.proto`
+
+# Environment Variables
+
+Copy the file `.env.example` into streaming-server directory and remove the example extension
