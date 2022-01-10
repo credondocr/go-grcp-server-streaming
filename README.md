@@ -22,3 +22,6 @@ Please read this documentation for more [information](http://google.github.io/pr
 # Environment Variables
 
 Copy the file `.env.example` into streaming-server directory and remove the example extension
+
+# Example
+`curl -H 'Content-Type: application/json' -X POST localhost:9000/users -d '["credondocr"]'     `
